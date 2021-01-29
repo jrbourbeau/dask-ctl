@@ -27,6 +27,9 @@ jobs:
           pip install git+https://github.com/dask/dask.git git+https://github.com/dask/distributed.git
           pip install -r requirements_test.txt
 
+      - name: List installed packages
+        run: pip list
+
       - name: Run tests
         run: pytest
 
